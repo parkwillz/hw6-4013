@@ -35,6 +35,26 @@
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
+     <div id="myPlot" style="width:100%;max-width:700px"></div>
+
+    <script>
+const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+const yArray = [55, 49, 44, 24, 15];
+
+const data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"v",
+  marker: {color:"rgba(0,0,255,0.6)"}
+}];
+
+const layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+
     <div class="button-wrapper">
       <button class="confetti-button">Click for Confetti</button>
     </div>
@@ -59,25 +79,6 @@
     </script>
 
     </script>
-
-    <div id="myPlot" style="width:100%;max-width:700px"></div>
-
-    <script>
-const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
-const yArray = [55, 49, 44, 24, 15];
-
-const data = [{
-  x:xArray,
-  y:yArray,
-  type:"bar",
-  orientation:"v",
-  marker: {color:"rgba(0,0,255,0.6)"}
-}];
-
-const layout = {title:"World Wide Wine Production"};
-
-Plotly.newPlot("myPlot", data, layout);
-</script>
 
 </body>
 </html>
